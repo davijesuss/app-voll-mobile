@@ -1,4 +1,4 @@
-import Principal from './src/principal';
+import Login from './src/Login';
 import {NativeBaseProvider, StatusBar} from 'native-base';
 
 import {TEMAS} from './src/estilos/temas'
@@ -6,8 +6,8 @@ import {TEMAS} from './src/estilos/temas'
 export default function App() {
   return (
     <NativeBaseProvider theme={TEMAS}>
-      <StatusBar backgroundColor={TEMAS.colors.gray[800]}></StatusBar>
-       <Principal/>
+      <StatusBar backgroundColor={TEMAS.colors.gray[800]} />
+      <Login />
     </NativeBaseProvider>
   );
 }
